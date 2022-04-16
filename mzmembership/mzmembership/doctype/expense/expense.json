@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-15 12:52:59.896035",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "party_type",
+  "party",
+  "mode_of_payment",
+  "column_break_4",
+  "date",
+  "is_paid",
+  "section_break_6",
+  "expense_table",
+  "data_8",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "party type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Dynamic Link",
+   "label": "party",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Link",
+   "label": "Mode of Payment",
+   "options": "Mode of Payment"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expense_table",
+   "fieldtype": "Data",
+   "label": "Expense Table"
+  },
+  {
+   "fieldname": "data_8",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Expense",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "is_paid",
+   "fieldtype": "Data",
+   "label": "Is Paid"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-01 09:43:58.075142",
+ "modified_by": "Administrator",
+ "module": "Mzmembership",
+ "name": "Expense",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

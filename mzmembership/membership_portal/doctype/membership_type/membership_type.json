@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:type",
+ "creation": "2022-03-19 12:11:14.577603",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "amount",
+  "income_account",
+  "data_4",
+  "duration",
+  "benefits"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Income Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "benefits",
+   "fieldtype": "Small Text",
+   "label": "Benefits"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-03-19 12:28:03.696662",
+ "modified_by": "Administrator",
+ "module": "Membership Portal",
+ "name": "Membership Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

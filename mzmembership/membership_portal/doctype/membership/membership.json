@@ -1,0 +1,130 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-03-19 12:00:00.974615",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "member",
+  "member_name",
+  "membership_type",
+  "income_account",
+  "data_6",
+  "status",
+  "valid_from",
+  "valid_to",
+  "amount",
+  "amended_from",
+  "cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming series",
+   "options": "MS-.YY.-",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "member.full_name",
+   "fieldname": "member_name",
+   "fieldtype": "Read Only",
+   "label": "Member Name"
+  },
+  {
+   "fieldname": "member",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Member",
+   "options": "Member",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member.membership_type",
+   "fieldname": "membership_type",
+   "fieldtype": "Link",
+   "label": "Membership Type",
+   "options": "Membership Type"
+  },
+  {
+   "fetch_from": "membership_type.income_account",
+   "fieldname": "income_account",
+   "fieldtype": "Link",
+   "label": "Income Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "data_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "New\nPending\nCancelled\nExpired\nActive\nRenewed"
+  },
+  {
+   "fetch_from": "member.member_since",
+   "fieldname": "valid_from",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Valid From",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "member.membership_expiry_date",
+   "fieldname": "valid_to",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Valid To",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "membership_type.amount",
+   "fieldname": "amount",
+   "fieldtype": "Data",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Data",
+   "label": "Amended From"
+  },
+  {
+   "default": "Main - MA",
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "cost center",
+   "options": "Cost Center"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-28 15:38:30.505960",
+ "modified_by": "Administrator",
+ "module": "Membership Portal",
+ "name": "Membership",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

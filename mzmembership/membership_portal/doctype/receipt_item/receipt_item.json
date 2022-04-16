@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-20 08:48:42.287866",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "invoice",
+  "date",
+  "total",
+  "column_break_4",
+  "outstanding",
+  "allocated"
+ ],
+ "fields": [
+  {
+   "fieldname": "invoice",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Invoice",
+   "options": "Invoice"
+  },
+  {
+   "fetch_from": "invoice.date",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "default": "0",
+   "fetch_from": "invoice.total",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "outstanding",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Outstanding"
+  },
+  {
+   "default": "0",
+   "fieldname": "allocated",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Allocated"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-03-20 08:48:42.287866",
+ "modified_by": "Administrator",
+ "module": "Membership Portal",
+ "name": "Receipt Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
