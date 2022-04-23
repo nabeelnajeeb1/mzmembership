@@ -1,0 +1,214 @@
+{
+ "actions": [],
+ "allow_events_in_timeline": 1,
+ "autoname": "CN.#####.",
+ "creation": "2021-09-21 11:45:54.167119",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "full_name",
+  "date_of_birth",
+  "gender",
+  "stream",
+  "column_break_5",
+  "status",
+  "mobile_number",
+  "email",
+  "section_break_9",
+  "year_of_joining",
+  "year_of_passing_out",
+  "batch_pass_out",
+  "column_break_12",
+  "class_of_joining",
+  "class_of_passing_out",
+  "section_break_13",
+  "residence",
+  "volunteer_opputunity",
+  "nationality",
+  "column_break_15",
+  "is_resident",
+  "qid"
+ ],
+ "fields": [
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Gender",
+   "options": "Gender",
+   "reqd": 1
+  },
+  {
+   "fieldname": "batch_pass_out",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "In which year did your batch pass out from 12th standard ",
+   "options": "\n1974\n1975\n1976\n1977\n1978\n1979\n1980\n1981\n1982\n1983\n1984\n1985\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stream",
+   "fieldtype": "Select",
+   "label": "Stream ",
+   "options": "Science\nCommerce\nHumanities\nArts\nNIL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Pending",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Pending\nApproved\nRejected"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "label": "Mobile Number",
+   "options": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "residence",
+   "fieldtype": "Link",
+   "label": "Present Country of Residence",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "volunteer_opputunity",
+   "fieldtype": "Select",
+   "label": "The MES Alumni Association will be organising annual reunions & other events. Do you wish to volunteer for the same? *",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Link",
+   "label": "Nationality",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "is_resident",
+   "fieldtype": "Select",
+   "label": "Are you Resident of Qatar?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval: doc.is_resident == \"Yes\"",
+   "fieldname": "qid",
+   "fieldtype": "Data",
+   "label": "QID"
+  },
+  {
+   "fieldname": "year_of_joining",
+   "fieldtype": "Select",
+   "label": "Year of Joining",
+   "options": "\n1974\n1975\n1976\n1977\n1978\n1979\n1980\n1981\n1982\n1983\n1984\n1985\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "class_of_joining",
+   "fieldtype": "Select",
+   "label": "Class of Joining",
+   "options": "\nKG\nKG1\nKG2\nI\nII\nIII\nIV\nV\nVI\nVII\nVIII\nIX\nX\nXI\nXII"
+  },
+  {
+   "fieldname": "year_of_passing_out",
+   "fieldtype": "Select",
+   "label": "Year of Passing Out",
+   "options": "\n1974\n1975\n1976\n1977\n1978\n1979\n1980\n1981\n1982\n1983\n1984\n1985\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021"
+  },
+  {
+   "fieldname": "class_of_passing_out",
+   "fieldtype": "Select",
+   "label": "Class of Passing Out",
+   "options": "\nKG\nKG1\nKG2\nI\nII\nIII\nIV\nV\nVI\nVII\nVIII\nIX\nX\nXI\nXII"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-02 11:42:40.240530",
+ "modified_by": "Administrator",
+ "module": "MES Alumni",
+ "name": "Community Member",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MES Alumni Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "full_name",
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "full_name",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
