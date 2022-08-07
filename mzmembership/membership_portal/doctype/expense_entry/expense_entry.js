@@ -26,7 +26,9 @@ frappe.ui.form.on("Expense Entry Item", "qty", function(frm, cdt, cdn) {
 	}
  
 	 frm.set_value("total_quantity",total);
-		 
+	frm.set_value("net_total",total);
+	frm.set_value("grand_total",total);
+	cur_frm.refresh();
 });
 
 
@@ -76,5 +78,22 @@ frappe.ui.form.on("Expense Entry", {
 				}
 			});
 		}
-	}
+	},
+	setup: function(frm){
+                frm.set_query("party_type", function(doc) {
+                        return {
+                                filters: [
+                                        ["DocType", "name", "in", ["Member"]]
+                                ]
+                        }
+                });
+
+                /*frm.set_query("account", function(doc) {
+                        return {
+                                filters: [
+                                        ["Account", "is_group", "=", 0]
+                                ]
+                        }
+                });*/
+        }
 });

@@ -19,7 +19,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-02-27 14:40:39.883469",
+ "modified": "2022-04-24 09:27:09.922187",
  "modified_by": "Administrator",
  "module": "Membership Portal",
  "name": "Project",
@@ -34,6 +34,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MES Alumni Admin",
    "share": 1,
    "write": 1
   }

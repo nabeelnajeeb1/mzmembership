@@ -11,7 +11,7 @@ app_license = "MIT"
 
 # Includes in <head>
 # ------------------
-
+boot_session = "mzmembership.boot.update_boot"
 # include js, css files in header of desk.html
 # app_include_css = "/assets/mzmembership/css/mzmembership.css"
 # app_include_js = "/assets/mzmembership/js/mzmembership.js"

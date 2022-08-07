@@ -21,7 +21,7 @@ frappe.ui.form.on("Invoice Item", {
 });
 
 function update_amount(frm){
-	let table = frm.doc.items;
+	let table = frm.doc.items || [];
 	let amount = 0;
 	let qty = 0;
 	for(let t in table){
@@ -34,6 +34,7 @@ function update_amount(frm){
 }
 
 frappe.ui.form.on("Invoice", {
+/*
 	refresh: function(frm) {
 		console.log("here");
 		if(cur_frm.doc.docstatus == 1){
@@ -68,14 +69,14 @@ frappe.ui.form.on("Invoice", {
 			}
 		}
 	},
-
+*/
 	setup: function(frm){
 		frm.set_query("party_type", function(doc) {
 			return {
-				filters: {
+				filters: [
 					["DocType", "name", "in", ["Member"]]
-				}
-			};
+				]
+			}
 		});
 	}
 });

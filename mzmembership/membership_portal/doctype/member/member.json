@@ -21,23 +21,27 @@
  ],
  "fields": [
   {
+   "fetch_from": "full_name.date_of_birth",
    "fieldname": "date_of_birth",
    "fieldtype": "Date",
    "label": "Date of Birth"
   },
   {
+   "fetch_from": "full_name.gender",
    "fieldname": "gender",
    "fieldtype": "Link",
    "label": "Gender",
    "options": "Gender"
   },
   {
+   "fetch_from": "full_name.email",
    "fieldname": "email",
    "fieldtype": "Data",
    "label": "Email",
    "options": "Email"
   },
   {
+   "fetch_from": "full_name.mobile_number",
    "fieldname": "mobile_no",
    "fieldtype": "Data",
    "label": "Mobile No"
@@ -53,22 +57,19 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Membership Type",
-   "options": "Membership Type",
-   "reqd": 1
+   "options": "Membership Type"
   },
   {
    "fieldname": "membership_expiry_date",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Membership Expiry Date",
-   "reqd": 1
+   "label": "Membership Expiry Date"
   },
   {
    "fieldname": "member_since",
    "fieldtype": "Date",
    "in_list_view": 1,
-   "label": "Member Since",
-   "reqd": 1
+   "label": "Member Since"
   },
   {
    "fieldname": "naming_series",
@@ -91,7 +92,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-03-20 16:58:51.161685",
+ "modified": "2022-06-10 10:41:40.755787",
  "modified_by": "Administrator",
  "module": "Membership Portal",
  "name": "Member",
@@ -106,6 +107,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MES Alumni Admin",
    "share": 1,
    "write": 1
   }

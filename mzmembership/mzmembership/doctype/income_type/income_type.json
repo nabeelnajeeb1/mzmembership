@@ -26,7 +26,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-07 11:22:37.161704",
+ "modified": "2022-04-24 09:36:04.090835",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Income Type",
@@ -41,6 +41,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MES Alumni Admin",
    "share": 1,
    "write": 1
   }

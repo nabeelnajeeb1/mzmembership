@@ -31,7 +31,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-11 12:34:41.989278",
+ "modified": "2022-04-24 09:35:25.934369",
  "modified_by": "Administrator",
  "module": "Mzmembership",
  "name": "Party Type",
@@ -47,6 +47,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MES Alumni Admin",
    "share": 1,
    "write": 1
   }

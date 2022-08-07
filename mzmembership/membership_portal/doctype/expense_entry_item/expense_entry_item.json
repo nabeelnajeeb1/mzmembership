@@ -18,6 +18,7 @@
   {
    "fieldname": "item",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Item"
   },
   {
@@ -28,26 +29,31 @@
   {
    "fieldname": "qty",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Qty"
   },
   {
    "fieldname": "unit",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Unit"
   },
   {
    "fieldname": "rate",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Rate"
   },
   {
    "fieldname": "amount",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Amount"
   },
   {
    "fieldname": "expense_head",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Expense Head",
    "options": "Account"
   }
@@ -55,7 +61,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2022-03-21 10:08:38.863112",
+ "modified": "2022-04-24 09:20:01.856658",
  "modified_by": "Administrator",
  "module": "Membership Portal",
  "name": "Expense Entry Item",

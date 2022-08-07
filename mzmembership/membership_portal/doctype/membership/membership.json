@@ -71,17 +71,15 @@
    "fetch_from": "member.member_since",
    "fieldname": "valid_from",
    "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Valid From",
-   "reqd": 1
+   "hidden": 1,
+   "label": "Valid From"
   },
   {
    "fetch_from": "member.membership_expiry_date",
    "fieldname": "valid_to",
    "fieldtype": "Date",
-   "in_list_view": 1,
-   "label": "Valid To",
-   "reqd": 1
+   "hidden": 1,
+   "label": "Valid To"
   },
   {
    "fetch_from": "membership_type.amount",
@@ -106,7 +104,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2022-03-28 15:38:30.505960",
+ "modified": "2022-06-28 21:17:37.532636",
  "modified_by": "Administrator",
  "module": "Membership Portal",
  "name": "Membership",
@@ -122,6 +120,21 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "MES Alumni Admin",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

@@ -17,5 +17,22 @@ frappe.ui.form.on("Receipt Vouchers",{
 					frappe.model.set_value(cur_frm.doc.items[0].doctype, cur_frm.doc.items[0].name, "allocated", frm.doc.paid_amount);
 			}
 	}
-}
+},
+	setup: function(frm){
+                frm.set_query("party_type", function(doc) {
+                        return {
+                                filters: [
+                                        ["DocType", "name", "in", ["Member"]]
+                                ]
+                        }
+                });
+
+                frm.set_query("account", function(doc) {
+                        return {
+                                filters: [
+                                        ["Account", "is_group", "=", 0]
+                                ]
+                        }
+                });
+        }
 });

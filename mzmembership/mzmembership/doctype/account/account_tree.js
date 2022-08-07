@@ -8,9 +8,8 @@ frappe.treeview_settings["Account"] = {
 		{
 			fieldname: "organization",
 			fieldtype:"Select",
-			options: "Mesalumni",
+			options: frappe.boot.mes.company[0],
 			label: __("Company"),
-			default: "Mesalumni",
 			on_change: function() {
 				var me = frappe.treeview_settings['Account'].treeview;
 				var organization = me.page.fields_dict.company.get_value();

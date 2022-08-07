@@ -2,7 +2,7 @@
  "cards_label": "Membership",
  "category": "Modules",
  "charts": [],
- "creation": "2022-03-07 09:18:01.353706",
+ "creation": "2022-04-24 09:30:32.092314",
  "developer_mode_only": 0,
  "disable_user_customization": 0,
  "docstatus": 0,
@@ -12,12 +12,12 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "label": "Membership Portal",
+ "label": "Home",
  "links": [
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Member",
+   "label": "Association Members",
    "link_to": "Member",
    "link_type": "DocType",
    "onboard": 0,
@@ -35,6 +35,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Sponsorship",
+   "link_to": "Sponsorship",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Membership Type",
    "link_to": "Membership Type",
    "link_type": "DocType",
@@ -44,17 +53,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Community Member",
+   "label": "Community Members",
    "link_to": "Community Member",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Association member",
-   "link_to": "Association member",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -65,13 +65,14 @@
    "label": "Accounts",
    "link_type": "DocType",
    "onboard": 0,
+   "only_for": "",
    "type": "Card Break"
   },
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Sponsorship",
-   "link_to": "Sponsorship",
+   "label": "Invoice",
+   "link_to": "Invoice",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -79,8 +80,8 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Invoice",
-   "link_to": "Invoice",
+   "label": "Account",
+   "link_to": "Account",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -106,7 +107,7 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "Recipt Voucher",
+   "label": "Receipt Voucher",
    "link_to": "Receipt Vouchers",
    "link_type": "DocType",
    "onboard": 0,
@@ -120,21 +121,32 @@
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mode of Payment",
+   "link_to": "Mode of Payment",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Cost Center",
+   "link_to": "Cost Center",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   }
  ],
- "modified": "2022-04-24 09:29:30.533197",
+ "modified": "2022-06-22 10:29:25.257006",
  "modified_by": "Administrator",
  "module": "Mzmembership",
- "name": "Membership Portal",
+ "name": "Home",
  "owner": "Administrator",
  "pin_to_bottom": 0,
  "pin_to_top": 0,
- "shortcuts": [
-  {
-   "doc_view": "List",
-   "label": "Member",
-   "link_to": "Member",
-   "type": "DocType"
-  }
- ]
+ "shortcuts": []
 }
